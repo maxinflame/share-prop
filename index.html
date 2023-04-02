@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Тикер</th>
+          <th>Кол-во акций в лоте</th>
+          <th>Цена за акцию, руб</th>
+          <th>Цена за лот, руб</th>
+        </tr>
+      </thead>
+      <tbody id="table">
+
+      </tbody>
+    </table>
+
+    <template id="share-add-form-template">
+      <td class="share-add-form-wrapper" colspan="5">
+        <form>
+          <input type="text" placeholder="Название" name="name" required>
+          <input type="text" placeholder="Тикер" name="ticker" required>
+          <input type="number" placeholder="Акций в лоте" name="lot" required>
+          <button></button>
+        </form>
+      </td>
+    </template>
+  </main>
+  <script src="js/Share.js"></script>
+  <script src="js/Category.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
