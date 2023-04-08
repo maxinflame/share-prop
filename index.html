@@ -10,21 +10,35 @@
 <body>
 
   <main>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Тикер</th>
-          <th>Кол-во акций в лоте</th>
-          <th>Цена за акцию, руб</th>
-          <th>Цена за лот, руб</th>
-        </tr>
-      </thead>
-      <tbody id="table">
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Тикер</th>
+            <th>Кол-во акций в лоте</th>
+            <th>Цена за акцию, руб</th>
+            <th>Цена за лот, руб</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+  
+        </tbody>
+      </table>
+      <button class="add-category-button">Добавить категорию</button>
+    </div>
 
-      </tbody>
-    </table>
-
+    <div class="category-add-popup">
+      <div class="category-add-popup__body">
+        <button class="category-add-popup__close"></button>
+        <form class="category-add-form">
+          <span>Введите имя категории</span>
+          <input class="category-add-input" type="text" placeholder="Имя категории" required>
+          <button class="category-add-popup__button">Добавить</button>
+        </form>
+      </div>
+    </div>
+    
     <template id="share-add-form-template">
       <td class="share-add-form-wrapper" colspan="5">
         <form>
